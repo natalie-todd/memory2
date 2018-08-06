@@ -3,12 +3,12 @@
 module.exports = {
 
   development: {
-    client: 'PG',
+    client: 'pg',
     connection: process.env.DATABASE_URL || 'postgres://localhost/resolution',
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: process.env.DATABASE_URL || 'postgres://localhost/resolution',
     },
 };
